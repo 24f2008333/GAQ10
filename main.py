@@ -29,7 +29,10 @@ rate_buckets = {}
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=[
+        "https://app-xubk6f.example.com",
+        "https://exam.sanand.workers.dev",
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
